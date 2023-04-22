@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="10dp">
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/batteryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Battery"/>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_below="@+id/batteryText"
+            android:id="@+id/batteryIMG"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="10dp">
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/directionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Direction"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_below="@+id/directionText"
+            android:id="@+id/directionIMG"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="10dp">
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/flashlightText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flashlight"/>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/flashlightIMG"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="10dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/contactsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contacts"/>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/contactsIMG"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/black"/>
+        </LinearLayout>
+
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/layout2"
+    android:layout_below="@id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/username_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/username_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:inputType="text"
+        android:hint="Enter your username"
+        android:textColor="#000000" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/password_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/password_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:hint="Enter your password"
+        android:textColor="#000000" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submit_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:backgroundTint="@color/black"
+        />
+    </LinearLayout>
+</RelativeLayout>
